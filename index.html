@@ -3,218 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV- Nicolas Monteiro</title>
-    <link rel="icon" type="image/png" href="img/favicon.png"> <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    
+    <title>CV Prénom Nom</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <main id="cv-container">
-        <header class="cv-header">
-        <div class="header-content">
-        <div class="photo-container">
-            <a href="assets/profil.jpg" target="_blank">
-                <img src="assets/profil.jpg" alt="Nicolas Monteiro" class="profile-pic">
-            </a>
-        </div>
-        <div class="identity">
-            <h1>Nicolas Monteiro</h1>
-            <p class="job-title">Développeur Web et Web Mobile</p>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="photo-container">
+                    <img src="https://via.placeholder.com/150" alt="Photo de profil">
+                </div>
+                <div class="header-text">
+                    <h1>Prénom Nom</h1>
+                    <h2>Développeur Web et Web Mobile</h2>
+                    <div class="contact-info">
+                        <span><i class="fas fa-envelope"></i> Mail</span>
+                        <span><i class="fas fa-home"></i> Adresse</span>
+                        <span><i class="fas fa-phone"></i> Téléphone</span>
+                        <span><i class="fas fa-car"></i> Permis B</span>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-           <div class="contact-grid">
-        <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:monteiro.nicolas@hotmail.fr">monteiro.nicolas@hotmail.fr</a>
-        </div>
-        <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i>
-        <a href="https://www.google.com/maps/search/?api=1&query=447+Boulevard+Jean+Moulin+83700+Saint-Raphael" target="_blank">
-         447 Boulevard Jean Moulin, 83700 Saint-Raphaël</a>
-        </div>
-        <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+33659930809">06 59 93 08 09</a>
-        </div>
-        <div class="contact-item">
-        <i class="fas fa-car"></i>
-        <span>Permis B</span>
-        </div>
-    </div>
-    </div>
-    </div>
-</header>
-
-        <div class="cv-body">
+        <div class="main-content">
             <aside class="sidebar">
                 <section>
-            <h3>Compétences</h3><hr><br>
-                     <ul class="skills-list">
-                        <li><strong>HTML</strong> <span class="stars">★★★★★</span></li> <li><strong>CSS</strong> <span class="stars">★★★★☆</span></li>
-                        <li><strong>Javascript</strong> <span class="stars">★★★☆☆</span></li>
-                        <li><strong>PHP</strong> <span class="stars">★☆☆☆☆</span></li>
-                    </ul><br>
+                    <h3>Compétences</h3>
+                    <div class="skill-row"><span>HTML</span> <span class="stars">★★★★☆</span></div>
+                    <div class="skill-row"><span>CSS</span> <span class="stars">★★★★☆</span></div>
+                    <div class="skill-row"><span>Javascript</span> <span class="stars">★★☆☆☆</span></div>
+                    <div class="skill-row"><span>PHP</span> <span class="stars">★★☆☆☆</span></div>
                 </section>
 
                 <section>
-                    <h3>Langues</h3><hr><br>
-                    <p><strong>Français</strong> <span class="detail">Langue maternelle</span></p>
-                    <p><strong>Anglais</strong> <span class="detail">Notion</span></p>
-                </section><br>
+                    <h3>Langues</h3>
+                    <p><strong>Français</strong> Langue maternelle</p>
+                    <p><strong>Anglais</strong> Professionnel</p>
+                    <p><strong>Allemand</strong> Notions</p>
+                </section>
 
                 <section>
-                    <h3>Qualités</h3><hr><br>
-                    <ul class="bullet-list">
+                    <h3>Qualités</h3>
+                    <ul>
                         <li>Esprit d'équipe</li>
                         <li>Autonomie</li>
                         <li>Organisation</li>
                         <li>Créativité</li>
-                    </ul><br>
+                    </ul>
                 </section>
 
                 <section>
-                    <h3>Centres d'intérêt</h3><hr><br>
-                    <ul class="bullet-list">
-                        <li>Randonnéé</li>
-                        <li>Rugby</li>
-                        <li>Football</li>
-                        <li>Voyages</li>
-                        <li>Jeu vidéo</li>
+                    <h3>Centres d'intérêt</h3>
+                    <ul>
+                        <li>Yoga</li>
+                        <li>Tennis</li>
+                        <li>Ecologie</li>
                     </ul>
                 </section>
             </aside>
 
-            <div class="main-content">
-                <section class="section-profil">
-                    <h3>Profil</h3><hr>
-                    <p class="profil-text">
-                        Actuellement en formation pour l'obtention du Titre Professionnel de Développeur Web et Web Mobile, je suis passionné par la création d'interfaces modernes et fonctionnelles. Fort d'un parcours riche et diversifié, allant du secteur militaire à la gestion d'entreprise, j'ai développé une grande adaptabilité, un esprit d'équipe solide et une rigueur à toute épreuve. Je maîtrise aujourd'hui les bases du HTML et du CSS, avec des compétences évolutives en JavaScript, et je souhaite mettre ma créativité et mon sens de l'organisation au service de projets web innovants.
-                    </p>
+            <main class="content">
+                <section>
+                    <h3>Profil</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem, consequuntur sunt repellendus porro eaque unde deleniti dicta perferendis magni debitis dolorem atque vitae voluptas.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed doloribus iste cumque odio! Sed voluptatum quidem cum quam aut voluptatem.</p>
                 </section>
 
                 <section>
-                    <h3>Formations</h3><hr>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Titre Professionnel DWWM</h4>
-                            <span class="date">2025/2026</span>
-                        </div>
-                        <p class="location">Centre Européen de Formation</p>
+                    <h3>Formations</h3>
+                    <div class="entry">
+                        <div><strong>Titre Professionnel DWWM</strong><br><em>Centre Européen de Formation</em></div>
+                        <span class="date">2023/2024</span>
                     </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Formation HACCP-Permis d'exploitation</h4>
-                            <span class="date">2016-2017</span>
-                        </div>
-                        <p class="location">Paris 12éme</p>
+                    <div class="entry">
+                        <div><strong>Remise à Niveau - Métiers du numérique</strong><br><em>Lycée de la ville</em></div>
+                        <span class="date">Juin 2023 - Septembre 2023</span>
                     </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Assistant Maternel</h4>
-                            <span class="date">2010-2011</span>
-                        </div>
-                        <p class="location">Creil</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Formation Agent de sureté aéroportuaire</h4>
-                            <span class="date">2003-2004</span>
-                        </div>
-                        <p class="location">Paris Charles de Gaulle</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Habilitation Sécurité Incendie</h4>
-                            <span class="date">2001-2002</span>
-                        </div>
-                        <p class="location">Creil</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Formation Agent de Sécurité</h4>
-                            <span class="date">2001-2001</span>
-                        </div>
-                        <p class="location">Creil</p>
+                    <div class="entry">
+                        <div><strong>Baccalauréat</strong><br><em>Lycée de la ville</em></div>
+                        <span class="date">1983</span>
                     </div>
                 </section>
 
-                 <section>
-                    <h3>Expériences professionnelles</h3><hr>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Boulanger</h4>
-                            <span class="date"> 2024 -  2026</span>
-                        </div>
-                        <p class="location">Fréjus</p>
+                <section>
+                    <h3>Stages</h3>
+                    <div class="entry">
+                        <div><strong>Gestionnaire de paye</strong><br><em>Société Truc & Machin</em></div>
+                        <span class="date">Mars 2022 - Avril 2022</span>
                     </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Ambulancier Funéraire</h4>
-                            <span class="date"> 2022 -  2024</span>
-                        </div>
-                        <p class="location">Fréjus</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Gérant Bar Tabac</h4>
-                            <span class="date"> 2017 - 2021</span>
-                        </div>
-                        <p class="location">Carcassonne</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Assistant Maternel</h4>
-                            <span class="date"> 2010 -  2017</span>
-                        </div>
-                        <p class="location">Bury</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Agent de sécurité aéroportuaire</h4>
-                            <span class="date"> 2006 - 2008</span>
-                        </div>
-                        <p class="location">Roissy Charles de Gaulle</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Agent de Sécurité Incendie</h4>
-                            <span class="date"> 2001 - 2005</span>
-                        </div>
-                        <p class="location">Creil</p>
-                    </div>
-                    <div class="exp-card">
-                        <div class="exp-header">
-                            <h4>Militaire</h4>
-                            <span class="date">1997 - 2001</span>
-                        </div>
-                        <p class="location">Evreux</p>
+                    <div class="entry">
+                        <div><strong>Agent d'accueil</strong><br><em>Mairie de la ville</em></div>
+                        <span class="date">Janvier 2021 - Février 2021</span>
                     </div>
                 </section>
-            </div>
+
+                <section>
+                    <h3>Expérience professionnelle</h3>
+                    <div class="entry">
+                        <div><strong>Agent d'accueil</strong><br><em>Mairie de la ville</em></div>
+                        <span class="date">Mars 2021 - Juillet 2021</span>
+                    </div>
+                    <div class="entry">
+                        <div><strong>Chauffeur - Livreur</strong><br><em>Transport Nénès & Fils</em></div>
+                        <span class="date">Septembre 2021 - Décembre 2021</span>
+                    </div>
+                    <div class="entry">
+                        <div><strong>Préparateur de commandes</strong><br><em>Le slip français</em></div>
+                        <span class="date">Janvier 2000 - Septembre 2000</span>
+                    </div>
+                </section>
+            </main>
         </div>
 
-    <footer class="cv-footer">
-    <div class="footer-icons">
-        <a href="https://www.linkedin.com/in/nicolas-monteiro" target="_blank" aria-label="LinkedIn">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-            </svg>
-        </a>
-        <a href="https://github.com/votre-pseudo" target="_blank" aria-label="GitHub">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-            </svg>
-        </a>
-        <a href="https://twitter.com/votre-compte" target="_blank" aria-label="Twitter">
-            <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.84 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-            </svg>
-        </a>
+        <footer>
+            <div class="social-icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Mis à jour le : JJ/MM/AAAA</p>
+        </footer>
     </div>
-    <p class="footer-update">Mis à jour le : 12/03/2026</p>
-</footer>
-</main>
 
 </body>
 </html>

@@ -31,7 +31,7 @@ body {
     display: flex; justify-content: center; 
 }
 
-#cv-container {
+.container {
     width: 1160px; 
     background-color: var(--white);
     display: flex; flex-direction: column;
@@ -44,7 +44,7 @@ h1, h2, h3, h4 {
     text-transform: none;
 }
 
-.cv-header {
+header {
     background-color: var(--primary);
     color: var(--white);
     padding: 50px;
@@ -54,7 +54,7 @@ h1, h2, h3, h4 {
     display: flex; align-items:flex-end;
 }
 
-.profile-pic {
+.photo-container img {
     width: 160px; height: 160px;
     border-radius: 50%; 
     border: 5px solid var(--white);
@@ -62,30 +62,30 @@ h1, h2, h3, h4 {
     transition: transform 0.3s ease;
 }
 
-.profile-pic:hover { cursor: zoom-in; }
+.photo-container img:hover { cursor: zoom-in; }
 
-.identity { margin-left: 50px; flex-grow: 1; }
-.identity h1 { text-align: center; color: var(--white); font-size: 3rem; margin: 0; }
-.job-title { text-align: center; font-size: 1.2rem; margin: 10px 0 25px 0; }
+.header-text { margin-left: 50px; flex-grow: 1; }
+.header-text h1 { text-align: center; color: var(--white); font-size: 3rem; margin: 0; }
+.header-text h2 { text-align: center; font-size: 1.2rem; margin: 10px 0 25px 0; }
 
-.contact-grid {
+.contact-info {
     display: grid; 
     grid-template-columns: 1fr 1fr;
     gap: 5px 20px;
     margin-top: 10px;
 }
-.contact-item a { color: var(--white); text-decoration: none;
+.contact-info span {
     display: flex;
-    align-items:  center;
+    align-items: center;
+    color: var(--white);
 }
-.contact-item i {
+.contact-info i {
     margin-right: 10px;
     width: 20px;
     text-align: center;
-    color: var(--white);
 }
 
-.cv-body { display:flex;} 
+.main-content { display:flex;} 
 
 .sidebar {
     width: 300px; 
@@ -99,75 +99,68 @@ h1, h2, h3, h4 {
     align-items:center;
 }
 
-.detail {
-    font-style:normal;
-    color: #333333; 
+.skill-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
 }
+.stars { color: var(--primary); }
 
-.main-content {
+.content {
     flex: 1; padding: 20px 40px;
 }
 
-.profil-text {
+.content p {
     text-align: justify; 
     text-indent: 50px; 
     line-height: 1.6;
 }
 
-.exp-card {
+.entry {
     padding: 15px 20px; margin-bottom: 5px;
     border-left: 5px solid transparent;
     transition: all 0.3s ease;
 }
 
-.exp-card:hover {
+.entry:hover {
     background-color: var(--sidebar-bg); 
     border-left: 5px solid var(--primary);
 }
 
-.exp-header { display: flex; justify-content: space-between; align-items: baseline; }
-.exp-header h4 { margin: 0; color: var(--dark); font-size: 1.1rem; }
+.entry div { display: flex; justify-content: space-between; align-items: baseline; }
+.entry strong { color: var(--dark); font-size: 1.1rem; }
 .date { color: var(--primary); font-weight: bold; }
 
-.skills-list, .bullet-list { list-style: none; padding: 0; }
-.skills-list li { display: flex; justify-content: space-between; margin-bottom: 8px; }
-.stars { color: var(--primary); }
-.bullet-list li::before { content: "■ "; color: var(--primary); font-size: 0.8rem; margin-right: 5px; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar li::before { content: "■ "; color: var(--primary); font-size: 0.8rem; margin-right: 5px; }
 
-.cv-footer {
+footer {
   background-color: #00b5b5; 
   padding: 20px 60px;
   text-align: center;
   width: 100%;
 }
 
-.footer-icons {
+.social-icons {
   display: flex;
   justify-content: center;
   gap: 30px; 
   margin-bottom: 8px;
 }
 
-.footer-icons a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-
-.footer-icons svg {
+.social-icons i {
   width: 24px;   
   height: 24px;
-  fill: #fff;    
+  color: #fff;    
   transition: opacity 0.2s ease;
 }
 
-.footer-icons a:hover svg {
+.social-icons i:hover {
   opacity: 0.8;  
   transform: scale(1.1);
 }
 
-.footer-update {
+footer p {
   color: #fff;
   font-size: 0.8rem;
   font-style: italic;
