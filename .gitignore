@@ -1,0 +1,14 @@
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers inutiles
+node_modules/
+dist/
+
+# Fichiers de configuration personnelle
+.env
+*.key
+git add .gitignore
+git commit -m "Déplacement du .gitignore à la racine"
+git push origin ta-branche-actuelle
